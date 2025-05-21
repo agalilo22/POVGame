@@ -1,0 +1,243 @@
+body {
+    background-color: #0f0e0e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Schoolbell", cursive;
+    color: white;
+}
+
+#game-container {
+    background-color: #0f0e0e;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 32rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for the landing page specific elements */
+#landing-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#landing-page p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#play-button {
+    width: 250px;
+    height: 70px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#heart-image {
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+#scene-text {
+    margin-bottom: 1rem;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+#choice-a,
+#choice-b {
+    margin: 0.5rem 0;
+    padding: 2.5rem;
+    width: 100%;
+}
+
+.custom-button {
+    background-image: url('./images/button1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    border: none;
+    font-family: "Schoolbell", cursive;
+    width: 500px;
+    height: 60px;
+    background-color: transparent;
+}
+
+#choice-a:hover,
+#choice-b:hover,
+#play-button:hover,
+#play-button:focus {
+    color: #ffffff;
+}
+
+/* Accessibility: Ensure keyboard navigation works */
+.custom-button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.selected-choice {
+    outline: #ffffff solid 2px;
+}
+
+#mental-health-resources {
+    /* Make this a flex container to center its children vertically */
+    display: flex;
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Fallback for inline text */
+    padding: 1.5rem;
+    color: white;
+    max-width: 32rem;
+    width: 100%;
+}
+
+#mental-health-resources h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+}
+
+#mental-health-resources p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+#mental-health-resources ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* Give space before the button */
+    /* Remove text-align: left; here, let parent center it */
+    font-size: 0.95rem;
+    width: 100%; /* Ensure ul takes full width to align its children */
+}
+
+#mental-health-resources li {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Stack link/text inside li vertically */
+    align-items: center; /* Center text/links inside li */
+    text-align: center; /* Center text inside li */
+}
+
+.resource-link {
+    color: #87CEEB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.resource-link:hover {
+    color: #ADD8E6;
+    text-decoration: underline;
+}
+
+#restart-button {
+    margin-top: 2rem;
+    width: 200px; /* Keep its defined width */
+    height: 60px;
+    font-size: 1.1rem;
+    margin-left: auto; /* NEW: Push left margin automatically */
+    margin-right: auto; /* NEW: Push right margin automatically */
+    display: block;      /* NEW: Ensure it behaves as a block-level element */
+}
+#restart-button:hover,
+    #restart-button:focus {
+        color: #ffffff;
+    }
+
+
+@media (max-width: 640px) {
+    #game-container {
+        padding: 1rem;
+    }
+
+    #landing-page h1 {
+        font-size: 1.5rem;
+    }
+
+    #landing-page p {
+        font-size: 1rem;
+    }
+
+    .custom-button {
+        width: 120px;
+        height: 40px;
+        font-size: 0.875rem;
+    }
+
+    #play-button {
+        width: 180px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    #choice-a,
+    #choice-b {
+        width: 100%;
+    }
+
+    #mental-health-resources h2 {
+        font-size: 2rem;
+    }
+
+    #mental-health-resources p {
+        font-size: 1rem;
+    }
+
+    #mental-health-resources ul {
+        font-size: 0.875rem;
+    }
+
+    #restart-button {
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    #restart-button:hover,
+    #restart-button:focus {
+        color: #ffffff;
+    }
+}

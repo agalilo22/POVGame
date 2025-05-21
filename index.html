@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POV - The Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="game-container">
+        <div id="landing-page">
+            <h1>Welcome to POV</h1>
+            <p>Embark on a journey where every choice shapes your path and influences your emotional well-being.
+                Navigate through daily scenarios, make decisions, and see how your heart vitality changes.</p>
+            <button id="play-button" class="custom-button">Start</button>
+        </div>
+
+        <div id="game-content" style="display: none;">
+            <h1>POV</h1>
+            <img id="heart-image" src='./images/neutralHeart_0.png' alt="Neutral Heart">
+            <p id="scene-text">Welcome to the journey. Make your first choice.</p>
+            <div id="choices">
+                <div id="choice-a" class="custom-button" role="button" tabindex="0">Choice A</div>
+                <div id="choice-b" class="custom-button" role="button" tabindex="0">Choice B</div>
+            </div>
+        </div>
+
+        <div id="mental-health-resources" style="display: none;">
+            <h2>Support is everwhere.</h2>
+            <p id="ending-message"></p>
+            <p>It's okay to ask for help. Here are some resources:</p>
+            <ul>
+                <li>
+                    <strong>National Center for Mental Health (NCMH) - Philippines</strong><br>
+
+                    Website: <a href="https://www.ncmhusaptayo.com/landing" target="_blank"
+                        class="resource-link">https://www.ncmhusaptayo.com</a><br>
+                    Crisis Hotlines:
+                    <a href="tel:1553" class="resource-link">1800-1888-1553 (Luzon-wide, toll-free)</a><br>
+                    <a href="tel:09178998727" class="resource-link">0917-899-8727 (Globe/TM)</a><br>
+                    <a href="tel:09190571553" class="resource-link">0919-057-1553 (Smart/TNT/Sun)</a>
+                </li>
+                <li>
+                    <strong>In Touch Community Services</strong><br>
+                    Website: <a href="https://www.in-touch.org/" target="_blank"
+                        class="resource-link">www.in-touch.org</a><br>
+                    Crisis Line: <a href="tel:0288937603" class="resource-link">(02) 8893-7603</a><br>
+                    Globe: <a href="tel:09178001123" class="resource-link">0917-800-1123</a><br>
+                    Smart: <a href="tel:09228938944" class="resource-link">0922-8938-944</a>
+                </li>
+                <li>
+                    <strong>Philippine Mental Health Association (PMHA)</strong><br>
+                    Website: <a href="https://pmha.org.ph/" target="_blank" class="resource-link">pmha.org.ph</a><br>
+                    Email: <a href="mailto:hello@pmha.org.ph" class="resource-link">hello@pmha.org.ph</a><br>
+                    Phone: <a href="tel:09175652036" class="resource-link">0917-565-2036</a>
+                </li>
+            </ul>
+            <button id="restart-button" class="custom-button">Play Again</button>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <audio id="background-music" loop>
+        <source src="./audio/Goldenhour.mp3" type="audio/mpeg">
+        <source src="./audio/Goldenhour.mp3" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="click-sound">
+        <source src="./audio/clickeffect.mp3" type="audio/mpeg">
+        <source src="./audio/clickeffect.mp3" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
