@@ -105,13 +105,6 @@ h1 {
 #play-button:focus {
     color: #ffffff;
 }
-
-/* Accessibility: Ensure keyboard navigation works */
-.custom-button:focus {
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
-}
-
 .selected-choice {
     outline: #ffffff solid 2px;
 }
