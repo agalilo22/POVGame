@@ -97,6 +97,7 @@ h1 {
     width: 500px;
     height: 60px;
     background-color: transparent;
+    transition: box-shadow 1s ease, color 1s ease, outline 1s ease, background-color 1s ease, text-shadow 1s ease; transition: box-shadow 1s ease, color 1s ease, outline 1s ease, background-color 1s ease, text-shadow 1s ease; 
 }
 
 #choice-a:hover,
@@ -182,55 +183,84 @@ h1 {
     }
 
 
-@media (max-width: 640px) {
-    #game-container {
-        padding: 1rem;
+    @media (max-width: 640px) {
+        #game-container {
+            padding: 1rem;
+        }
+    
+        #landing-page h1 {
+            font-size: 1.5rem;
+        }
+    
+        #landing-page p {
+            font-size: 1rem;
+        }
+    
+        .custom-button {
+            width: 120px; /* Adjust width for the button's background image */
+            height: 40px; /* Adjust height for the button's background image */
+            font-size: 0.875rem;
+            color: #FFFFFF; /* White text for buttons on mobile/tablet */
+            background-size: 100% 100%; /* Ensure button image covers fully */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    
+        #play-button {
+            width: 180px;
+            height: 50px;
+            font-size: 1rem;
+        }
+    
+        #choice-a,
+        #choice-b {
+            width: 100%;
+            padding: 1.5rem; /* Reduce padding for choices on small screens if they look too big */
+        }
+    
+        /* Brief highlight on click (active state) for all custom buttons on small screens */
+        .custom-button:active {
+            background-color: rgba(255, 255, 255, 0.2); /* Keep a subtle background change if desired */
+            /* REMOVE previous 'outline' and 'color' from here */
+            
+            color: #FFFFFF; /* Ensure text remains white or bright for the glow */
+            text-shadow:
+                0 0 15px #ffffff,  /* Smaller, tighter blue glow */
+                0 0 25px #ffffff, /* Medium blue glow */
+                0 0 30px #ffffff; /* Wider, softer blue glow */
+        }
+    
+        #mental-health-resources h2 {
+            font-size: 2rem;
+        }
+    
+        #mental-health-resources p {
+            font-size: 1rem;
+        }
+    
+        #mental-health-resources ul {
+            font-size: 0.875rem;
+        }
+    
+        #mental-health-resources li {
+            padding: 0.8rem; /* Slightly less padding for list items */
+        }
+    
+        .resource-link {
+            font-size: 0.85rem; /* Smaller link text if necessary */
+        }
+    
+        #restart-button {
+            width: 150px;
+            height: 50px;
+            font-size: 1rem;
+        }
+    
+        #restart-button:hover,
+        #restart-button:focus {
+            color: #ffffff;
+        }
+        .selected-choice {
+            outline: #ffffff00 solid 2px;
+        }
     }
-
-    #landing-page h1 {
-        font-size: 1.5rem;
-    }
-
-    #landing-page p {
-        font-size: 1rem;
-    }
-
-    .custom-button {
-        width: 120px;
-        height: 40px;
-        font-size: 0.875rem;
-    }
-
-    #play-button {
-        width: 180px;
-        height: 50px;
-        font-size: 1rem;
-    }
-
-    #choice-a,
-    #choice-b {
-        width: 100%;
-    }
-
-    #mental-health-resources h2 {
-        font-size: 2rem;
-    }
-
-    #mental-health-resources p {
-        font-size: 1rem;
-    }
-
-    #mental-health-resources ul {
-        font-size: 0.875rem;
-    }
-
-    #restart-button {
-        width: 150px;
-        height: 50px;
-        font-size: 1rem;
-    }
-    #restart-button:hover,
-    #restart-button:focus {
-        color: #ffffff;
-    }
-}

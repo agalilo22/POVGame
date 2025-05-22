@@ -186,7 +186,7 @@ function makeChoice(chosenElement, vitalityChange) {
     setTimeout(() => {
         currentScene++;
         updateScene();
-    }, 500); // Adjust delay (in milliseconds) as needed
+    }, 1500); // Adjust delay (in milliseconds) as needed
 }
 
 // NEW: Function to restart the game
